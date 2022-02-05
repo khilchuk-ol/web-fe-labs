@@ -1,3 +1,3 @@
-# Report for first task
+# Results for first task
 
-Preview of this site on GitHub pages:
+Preview of this site on GitHub pages: <https://khilchuk-ol.github.io/web-fe-labs/lab1/>
