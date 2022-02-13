@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container #header {
+  flex-grow: 150;
+}
+
+.container #content {
+  flex-grow: 525;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.container #content #text {
+  flex-grow: 3;
+}
+
+.container #content #side-image {
+  flex-grow: 1;
+}
+
+.container #footer {
+  flex-grow: 125;
+}

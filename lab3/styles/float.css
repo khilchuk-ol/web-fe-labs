@@ -1,0 +1,22 @@
+.container #header {
+  height: 18.75%;
+}
+
+.container #content {
+  height: 65.625%;
+}
+
+.container #content #text {
+  float: left;
+  width: 75%;
+  height: 100%;
+}
+
+.container #content #side-image {
+  width: auto;
+  height: 100%;
+}
+
+.container #footer {
+  height: 15.625%;
+}
