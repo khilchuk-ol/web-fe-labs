@@ -7,3 +7,16 @@
   background-color: #ffbde9;
   color: #353535;
 }
+
+#imgs-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#img-wrapper,
+#link-img-wrapper {
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+  margin: 1rem;
+}
