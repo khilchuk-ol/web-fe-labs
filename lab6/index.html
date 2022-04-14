@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Khilchuk O.V. IT-91 lab6 var55</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab 6 WEB/FE" />
+    <meta name="variant" content="55" />
+    <meta name="keywords" content="KPI, WEB/FE, Khilchuk, Lab6" />
+    <meta name="author" content="Khilchuk Olena" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container flex-container">
+      <div id="form">
+        <form id="form" onsubmit="return false">
+          <fieldset>
+            <legend>Заповніть форму</legend>
+            <input type="text" id="name" name="name" placeholder="ПІБ" />
+            <input type="text" id="group" name="group" placeholder="Група" />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="(000)-000-00-00"
+            />
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Адреса"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </fieldset>
+          <input type="submit" id="submit-btn" value="Відправити" />
+        </form>
+      </div>
+      <div id="results" class="hidden">
+        <div id="name-div"><b>Name: </b></div>
+        <div id="group-div"><b>Group: </b></div>
+        <div id="phone-div"><b>Phone: </b></div>
+        <div id="address-div"><b>Address: </b></div>
+        <div id="email-div"><b>Email: </b></div>
+      </div>
+    </div>
+
+    <div class="container flex-container">
+      <div id="table">
+        <input type="color" id="color-picker" value="#e66465" />
+        <table id="table6x6">
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td id="cell12">12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td id="special">19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+            <td>34</td>
+            <td>35</td>
+            <td>36</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
