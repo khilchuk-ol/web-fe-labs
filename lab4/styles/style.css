@@ -1,0 +1,9 @@
+* {
+  margin: 0 auto;
+}
+
+header #container {
+  background-image: url(https://khilchuk-ol.github.io/web-fe-labs/lab4/imgs/resort-header.jpeg);
+  height: auto;
+  width: 100%;
+}
