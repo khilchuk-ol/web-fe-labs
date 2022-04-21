@@ -84,23 +84,22 @@ header #navbar img {
   padding: 0 0.5em;
 }
 
-/* CONTENT 1 STYLES */
+/* CONTENT 1 and 3 STYLES */
 
-#content #info_1 {
+#content #info_1,
+#content #info_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 8em 5em;
 }
 
-@media (max-width: 1000px) {
-  #content #info_1 {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+#content #info_1 #text {
+  flex-grow: 2;
+  padding: 1.4em 5em 1.4em 1.4em;
 }
 
-#content #info_1 #text {
+#content #info_3 #text {
   flex-grow: 2;
   padding: 1.4em 5em 1.4em 1.4em;
 }
@@ -109,32 +108,38 @@ header #navbar img {
   color: rgb(0, 145, 255);
 }
 
-#content #info_1 #text {
+#content #text {
   color: rgb(84, 84, 84);
 }
 
-#content #info_1 #text #title {
+#content #info_1 #text #title,
+#content #info_3 #text #title {
   font-size: 3em;
   padding: 0.3em 0 0.7em 0;
 }
 
-#content #info_1 #img_1,
-#content #info_1 #img_2 {
+#content #img_1,
+#content #img_2 {
   flex-grow: 1;
   height: fit-content;
   width: fit-content;
 }
 
-#content #info_1 #img_2 {
+#content #info_3 #img_1 img {
+  width: 22em;
+}
+
+#content #img_2 {
   margin-left: 1em;
 }
 
-#content #info_1 #img_1 img {
+#content #img_1 img {
   height: 35em;
+  object-fit: cover;
   margin-bottom: 3em;
 }
 
-#content #info_1 #img_2 img {
+#content #img_2 img {
   height: 35em;
   margin-top: 3em;
 }
@@ -143,6 +148,10 @@ header #navbar img {
   color: rgb(84, 84, 84);
   text-decoration: underline;
   margin-top: 3em;
+}
+
+#content #info_3 #text {
+  padding-left: 5em;
 }
 
 /* CONTENT 2 STYLES */
@@ -211,4 +220,80 @@ header #navbar img {
 #content #video {
   width: 100%;
   background-image: url(https://khilchuk-ol.github.io/web-fe-labs/lab4/imgs/video_cover.jpg);
+  background-size: cover;
+}
+
+#content #video #container {
+  background-color: rgba(67, 68, 74, 0.52);
+  color: white;
+  min-height: 50em;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#content #video #title {
+  font-size: 3em;
+}
+
+#circle {
+  margin-top: 25px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#circle #arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 15px solid rgb(0, 145, 255);
+}
+
+#circle #padding {
+  padding-top: 17px;
+}
+
+@media (max-width: 1000px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  #content #info_1,
+  #content #info_3,
+  #content #info_2 #gallery {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #content #info_2 #gallery #item {
+    padding-bottom: 10px;
+  }
+
+  #content #info_2 #gallery #item button {
+    width: 65%;
+    margin-left: 0;
+  }
+
+  #content #video #container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #content #video #container #title {
+    padding: 1em;
+  }
+
+  #content img {
+    margin-left: -70px !important;
+  }
 }
