@@ -2,8 +2,213 @@
   margin: 0 auto;
 }
 
-header #container {
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
+}
+
+button:hover,
+span:hover,
+.int-link:hover,
+.blue-text:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+/* HEADER STYLES */
+
+header {
   background-image: url(https://khilchuk-ol.github.io/web-fe-labs/lab4/imgs/resort-header.jpeg);
-  height: auto;
+  background-size: cover;
   width: 100%;
+}
+
+header #container {
+  background-color: rgba(67, 68, 74, 0.52);
+  height: 100%;
+  width: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+header #title {
+  color: white;
+  height: 40em;
+}
+
+header #title #main_title {
+  font-size: 5em;
+  margin-top: 40%;
+}
+
+header #title #main_title + p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+header #navbar {
+  color: white;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header #navbar #left {
+  text-align: left;
+  width: 45%;
+}
+
+header #navbar #right {
+  text-align: right;
+  width: 40%;
+}
+
+header #navbar span {
+  padding: 3px;
+}
+
+header #navbar button {
+  padding: 10px 20px;
+  margin: 3px 10px 3px 30px;
+  color: white;
+  background-color: rgb(0, 145, 255);
+  border: none;
+}
+
+header #navbar img {
+  height: 1.1em;
+  padding: 0 0.5em;
+}
+
+/* CONTENT 1 STYLES */
+
+#content #info_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8em 5em;
+}
+
+@media (max-width: 1000px) {
+  #content #info_1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+#content #info_1 #text {
+  flex-grow: 2;
+  padding: 1.4em 5em 1.4em 1.4em;
+}
+
+.blue-text {
+  color: rgb(0, 145, 255);
+}
+
+#content #info_1 #text {
+  color: rgb(84, 84, 84);
+}
+
+#content #info_1 #text #title {
+  font-size: 3em;
+  padding: 0.3em 0 0.7em 0;
+}
+
+#content #info_1 #img_1,
+#content #info_1 #img_2 {
+  flex-grow: 1;
+  height: fit-content;
+  width: fit-content;
+}
+
+#content #info_1 #img_2 {
+  margin-left: 1em;
+}
+
+#content #info_1 #img_1 img {
+  height: 35em;
+  margin-bottom: 3em;
+}
+
+#content #info_1 #img_2 img {
+  height: 35em;
+  margin-top: 3em;
+}
+
+.int-link {
+  color: rgb(84, 84, 84);
+  text-decoration: underline;
+  margin-top: 3em;
+}
+
+/* CONTENT 2 STYLES */
+
+#content #info_2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4em 4em 4em;
+  color: rgb(84, 84, 84);
+}
+
+#content #info_2 #title {
+  margin-top: 0.3em;
+  font-size: 3em;
+}
+
+#content #info_2 #gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3em 0;
+}
+
+#gallery #item {
+  display: flex;
+  flex-direction: column;
+}
+
+#gallery #item img {
+  height: 27em;
+  width: 27em;
+  object-fit: cover;
+}
+
+#gallery #item p {
+  margin-top: 1em;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+#gallery #item ul {
+  margin-top: 0.8em;
+  font-size: 1.15em;
+  width: 100%;
+  text-align: left;
+  margin-left: -1.3em;
+}
+
+#gallery #item button,
+#gallery #item button:focus,
+#gallery #item button:active {
+  margin-top: 1.4em;
+  width: 100%;
+  height: 2.5em;
+  color: rgb(0, 145, 255);
+  font-size: 1.15em;
+  border-style: solid;
+  border-color: rgb(0, 145, 255);
+  background-color: transparent;
+}
+
+/* VIDEO */
+
+#content #video {
+  width: 100%;
+  background-image: url(https://khilchuk-ol.github.io/web-fe-labs/lab4/imgs/video_cover.jpg);
 }
